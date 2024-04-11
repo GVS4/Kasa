@@ -1,0 +1,27 @@
+.gallery {
+  border-radius: 25px;
+  background: #F6F6F6;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 28%);
+  grid-template-rows: auto;
+  gap: 50px;
+  padding: 50px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+
+  @media screen and (max-width: 768px) {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding: 0 0;
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 45%);
+  }
+}
