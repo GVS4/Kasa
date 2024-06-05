@@ -6,7 +6,7 @@ import "./sass/main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/P8">  {/* Ajoutez le basename ici */}
+    <BrowserRouter basename="/P8">
       <App />
     </BrowserRouter>
   </React.StrictMode>

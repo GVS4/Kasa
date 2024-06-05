@@ -4,11 +4,11 @@ import Home from "./pages/Home";
 import Rental from "./pages/Rental";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter >
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
